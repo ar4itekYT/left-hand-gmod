@@ -3,7 +3,6 @@ local rh = CreateClientConVar("cl_righthand", 1, true, false, "Choose your hand.
 timer.Create("RightHand", 1, 0, function()
 
 	for k,v in pairs(ents.GetAll()) do 
-		print(v:GetClass())
 
 		if !rh:GetBool() then
 
